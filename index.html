@@ -14,6 +14,8 @@
         <div class="main" ng-controller="MainController">
             <h2>{{ title }}</h2>
             
+            <p>Last refresh: {{timestamp | date}}</p>
+            
             <button ng-click="loadData()">Refresh</button>
             
             <div ng-repeat="day in forecast.query.results.channel.item.forecast">
